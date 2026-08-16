@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+**/.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Next.js
+web-simulator/.next/
+web-simulator/out/
+
+# Android / Gradle
+mobile-client/.gradle/
+mobile-client/**/build/
+mobile-client/local.properties
+mobile-client/*.iml
+mobile-client/.idea/
+mobile-client/captures/
+*.apk
+*.ap_
+*.aab
+
+# IDE
+.idea/
+*.iml
+
+# Env / secrets (keep local examples only)
+.env
+.env.*.local
+!.env.example
+
+# Logs
+*.log
+
+# Security
+safety-worker/serviceAccountKey.json
