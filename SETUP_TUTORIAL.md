@@ -193,11 +193,10 @@ sdk.dir=/Users/<your-user>/Library/Android/sdk
 Windows:
 ```properties
 sdk.dir=C:\\Users\\<your-user>\\AppData\\Local\\Android\\Sdk -->
-
+```
 
 ## 9. Common issues and fixes
 
-```
 ### Node command not found
 - Reinstall Node.js LTS
 - Restart terminal
