@@ -1,0 +1,62 @@
+{
+  "house": {
+    "floors": {
+      "floor_1": {
+        "id": "floor_1",
+        "name": "Ground Floor",
+        "grid_layout": "3x3",
+        "devices": {
+          "dev_01": {
+            "id": "dev_01",
+            "name": "Living Room Light",
+            "type": "LIGHTING",
+            "status": "ON",
+            "grid_position": { "x": 0, "y": 1 },
+            "is_scheduled": true,
+            "schedule": {
+              "turn_on_time": "18:00",
+              "turn_off_time": "22:00"
+            }
+          },
+          "dev_02": {
+            "id": "dev_02",
+            "name": "Clothing Iron",
+            "type": "SAFETY_HAZARD",
+            "status": "ON",
+            "grid_position": { "x": 1, "y": 2 },
+            "max_on_duration_seconds": 1800,
+            "last_turned_on_timestamp": 1722254000000
+          },
+          "dev_03": {
+            "id": "dev_03",
+            "name": "Main Gang Box",
+            "type": "MULTI_SWITCH",
+            "status": "ON",
+            "grid_position": { "x": 2, "y": 0 },
+            "switches": {
+              "sw_1": { "name": "Fan", "status": "ON" },
+              "sw_2": { "name": "Chandelier", "status": "OFF" },
+              "sw_3": { "name": "Wall Sconce", "status": "OFF" }
+            }
+          },
+          "dev_04": {
+            "id": "dev_04",
+            "name": "Front Porch Camera",
+            "type": "SECURITY_CAMERA",
+            "status": "ON",
+            "grid_position": { "x": 0, "y": 0 },
+            "stream_url": "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+          }
+        }
+      }
+    }
+  },
+  "alerts": {
+    "alert_101": {
+      "device_id": "dev_02",
+      "type": "SAFETY_CUTOFF_TRIGGERED",
+      "message": "Clothing Iron turned OFF automatically after reaching max operating duration.",
+      "timestamp": 1722255800000
+    }
+  }
+}
